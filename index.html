@@ -97,7 +97,7 @@
 				<form>
 					<div class="checkbox">
 						<label>
-							<input type="checkbox" name="commit_update"> Updated to HEAD before reviewing commit
+							<input type="checkbox" name="commit_update_pre"> Updated to HEAD before reviewing commit
 						</label>
 					</div>
 					<div class="checkbox">
@@ -147,12 +147,12 @@
 					</div>
 					<div class="checkbox">
 						<label>
-							<input type="checkbox" name="commit_diff"> Updated to HEAD again, repeat review if incoming changes present
+							<input type="checkbox" name="commit_update_post"> Updated to HEAD again, repeat review if incoming changes present
 						</label>
 					</div>
 					<div class="checkbox">
 						<label>
-							<input type="checkbox" name="commit_diff"> Commit
+							<input type="checkbox" name="commit_commit"> Commit
 						</label>
 					</div>
 					<textarea class="form-control autowrap commit-width" rows="10" cols="72" name="commit_notes" placeholder="Any notes for your commit-message"></textarea>
