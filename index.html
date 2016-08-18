@@ -53,6 +53,7 @@
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
 						<li><a href="#about">About</a></li>
+						<li><a href="#featuredev">Developing a feature</a></li>
 						<li><a href="#commit">Committing</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
@@ -80,19 +81,50 @@
 				</p>
 			</section>
 
+			<section id="#featuredev">
+				<h2>Developing a feature</h2>
+				<p class="lead">
+					These need to be checked before a new feature or change is
+					considered to be finished.
+				</p>
+				<form>
+					<h2>Accessibility</h2>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="featuredev_a11y_input"> Fully tested using only touch, only mouse and only keyboard
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="featuredev_a11y_screenreader"> Navigated through everything with a <a href="http://webaim.org/projects/screenreadersurvey6/#primary">screenreader</a>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="featuredev_a11y_validator"> Run through a <a href="http://wave.webaim.org">a11y validator</a>
+						</label>
+					</div>
+					<h2>Security</h2>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="featuredev_sec_input"> All user input is scrubbed and secured against attacks
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="featuredev_sec_backend_auth"> Every callable backend resource requires sufficient authentication and authorization
+						</label>
+					</div>
+					<button type="reset" class="btn btn-default">Reset</button>
+				</form>
+			</section>
+
 			<section id="#commit">
 				<h2>Committing</h2>
 				<p class="lead">
 					Check all these before committing code to a repository. Also
 					applicable with some modification to creating a patch file
 					or pull-request.
-				</p>
-				<p>
-					This list only chores. Higher-level considerations like "does
-					my commit fix the targetted bug in all situations" and "did
-					I protect against mallicious input" I consider to be normal
-					programmer behaviour. You shouldn't wait until committing
-					to be thinking about such things anyway.
 				</p>
 				<form>
 					<div class="checkbox">
@@ -159,7 +191,6 @@
 					<button type="reset" class="btn btn-default">Reset</button>
 				</form>
 			</section>
-
 		</div><!-- /.container -->
 
 		<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Element.prototype.closest"></script>
